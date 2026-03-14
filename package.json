@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "bash ./scripts/build.sh",
-    "dev": "bash ./scripts/dev.sh",
+    "build": "next build",       // 核心修改：替换自定义build脚本
+    "dev": "next dev",           // 替换自定义dev脚本
     "preinstall": "npx only-allow pnpm",
-    "lint": "eslint",
-    "start": "bash ./scripts/start.sh",
+    "lint": "next lint",         // 适配Next.js的lint命令
+    "start": "next start",       // 替换自定义start脚本
     "ts-check": "tsc -p tsconfig.json"
-  },
+  }
+}
   "dependencies": {
     "@aws-sdk/client-s3": "^3.958.0",
     "@aws-sdk/lib-storage": "^3.958.0",
