@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",       // 核心修改：替换自定义build脚本
-    "dev": "next dev",           // 替换自定义dev脚本
+    "build": "next build",       
+    "dev": "next dev",           
     "preinstall": "npx only-allow pnpm",
-    "lint": "next lint",         // 适配Next.js的lint命令
-    "start": "next start",       // 替换自定义start脚本
+    "lint": "next lint",         
+    "start": "next start",      
     "ts-check": "tsc -p tsconfig.json"
   }
 }
